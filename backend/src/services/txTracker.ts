@@ -48,10 +48,12 @@ export const pollTransactions = async () => {
 
     for (const post of postBalances) {
       console.log(post)
-      const owner = post.owner;
+      const owner = post.owner?post.owner : "Ayush";
       if (!walletSet.has(owner) || post.mint !== TOKEN_MINT.toBase58()) continue;
 
-      const pre = preBalances.find((b) => b.owner === owner);
+      
+
+      const pre = preBalances?.find((b) => b.owner === owner);
       const preAmt = pre ? parseFloat(pre.uiTokenAmount.amount) : 0;
       const postAmt = parseFloat(post.uiTokenAmount.amount);
       const delta = postAmt - preAmt;
