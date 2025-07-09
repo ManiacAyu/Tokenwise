@@ -1,6 +1,6 @@
 import { DataSource } from 'typeorm';
-import { Wallet } from '../models/Wallet.js';
-import { Transaction } from '../models/Transaction.js';
+import { Wallet } from '../models/Wallet';
+import { Transaction } from '../models/Transaction';
 
 export const AppDataSource = new DataSource({
   type: 'postgres',

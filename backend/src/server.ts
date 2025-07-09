@@ -1,8 +1,8 @@
 import 'reflect-metadata';
-import { AppDataSource } from './config/data-source.js';
-import app from './app.js';
-import { pollTransactions } from './services/txTracker.js';
-import { fetchTopHolders } from './services/walletService.js'; // ✅ Import this
+import { AppDataSource } from './config/data-source';
+import app from './app';
+import { pollTransactions } from './services/txTracker';
+import { fetchTopHolders } from './services/walletService'; // ✅ Import this
 
 const PORT = process.env.PORT || 4000;
 
