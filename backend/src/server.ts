@@ -22,7 +22,7 @@ AppDataSource.initialize()
     // ✅ Start polling transactions after DB and wallets are ready
     setInterval(() => {
       pollTransactions().catch(console.error);
-    }, 30000);
+    }, 60000);
   })
   .catch((err) => {
     console.error('❌ Error during DB initialization:', err);
