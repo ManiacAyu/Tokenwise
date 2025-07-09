@@ -47,7 +47,6 @@ export const pollTransactions = async () => {
     const postBalances = parsedTx.meta.postTokenBalances;
 
     for (const post of postBalances) {
-      console.log(post)
       const owner = post.owner?post.owner : "Ayush";
       if (!walletSet.has(owner) || post.mint !== TOKEN_MINT.toBase58()) continue;
 
@@ -75,7 +74,6 @@ export const pollTransactions = async () => {
         await txRepo.save(tx);
       } catch (err: any) {
         if (err?.code === '23505') {
-          console.warn(`🔁 Duplicate key on save: ${sig.signature}`);
         } else {
           throw err;
         }
@@ -107,7 +105,6 @@ async function retryWithBackoff<T>(fn: () => Promise<T>, maxRetries = 5): Promis
       return await fn();
     } catch (err: any) {
       if (err?.message?.includes("429")) {
-        console.warn(`🔁 429 Too Many Requests. Retrying after ${delay}ms`);
         await new Promise((res) => setTimeout(res, delay));
         delay *= 2;
       } else {

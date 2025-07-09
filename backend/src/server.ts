@@ -15,7 +15,7 @@ AppDataSource.initialize()
 
     // ✅ Populate wallet table with top holders before polling
     await fetchTopHolders();
-    console.log("AAYA");
+    
 
     
 

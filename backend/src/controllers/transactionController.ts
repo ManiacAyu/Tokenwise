@@ -14,7 +14,6 @@ export const getTransactions = async (req: Request, res: Response) => {
 
     res.status(200).json(transactions);
   } catch (error) {
-    console.error('❌ Error fetching transactions:', error);
     res.status(500).json({ error: 'Failed to fetch transactions' });
   }
 };
