@@ -33,7 +33,7 @@ TokenWise is a full-stack dashboard that tracks **top 60 holders** of a specific
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/tokenwise.git
+git clone https://github.com/ManiacAyu/tokenwise.git
 cd tokenwise
 ```
 
@@ -50,8 +50,7 @@ Create a `.env` file inside `/backend`:
 
 ```env
 PORT=4000
-DATABASE_URL=your_neon_or_postgres_url
-HELIUS_RPC=https://mainnet.helius-rpc.com/?api-key=your-api-key
+
 ```
 
 > ✅ Uses TypeORM, so `synchronize: true` will auto-create tables.
@@ -73,13 +72,6 @@ cd ../frontend
 npm install
 ```
 
-#### ➕ Environment Variables
-
-Create a `.env` file in `/frontend`:
-
-```env
-VITE_API_BASE=https://your-backend-domain.com/api
-```
 
 ### 5. Run Frontend
 
