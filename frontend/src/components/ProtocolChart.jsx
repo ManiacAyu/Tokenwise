@@ -44,7 +44,7 @@ export default function ProtocolChart({ counts }) {
         labels: {
           usePointStyle: true,
           pointStyle: 'rectRounded',
-          color: 'rgba(255, 255, 255, 0.9)',
+          color: 'black',
           font: {
             size: 13,
           },

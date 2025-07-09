@@ -9,7 +9,7 @@ function TransactionTable({ data }) {
   return (
     <div className="bg-gradient-to-br from-gray-900/50 to-gray-800/50 backdrop-blur-sm border border-gray-700/50 rounded-2xl overflow-hidden">
       <div className="overflow-x-auto">
-        <table className="w-full text-sm">
+        <table style={{ width: "100%" }} className="w-full text-sm">
           <thead>
             <tr className="bg-gradient-to-r from-gray-800/50 to-gray-700/50 border-b border-gray-600/50">
               <th className="text-left px-6 py-4 text-gray-200 font-semibold">Wallet</th>
