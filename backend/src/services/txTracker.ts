@@ -1,7 +1,7 @@
 import { Connection, PublicKey } from "@solana/web3.js";
-import { AppDataSource } from "../config/data-source";
-import { Transaction } from "../models/Transaction";
-import { Wallet } from "../models/Wallet";
+import { AppDataSource } from "../config/data-source.js";
+import { Transaction } from "../models/Transaction.js";
+import { Wallet } from "../models/Wallet.js";
 
 const connection = new Connection("https://mainnet.helius-rpc.com/?api-key=7f216b11-a3a3-4ce3-8152-926e7c645372");
 const TOKEN_MINT = new PublicKey("9BB6NFEcjBCtnNLFko2FqVQBq8HHM13kCyYcdQbgpump");

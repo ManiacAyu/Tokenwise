@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
-import walletRoutes from './routes/walletRoutes';
-import transactionRoutes from './routes/transactionRoutes';
-import exportRoutes from './routes/exportRoute';
+import walletRoutes from './routes/walletRoutes.js';
+import transactionRoutes from './routes/transactionRoutes.js';
+import exportRoutes from './routes/exportRoute.js';
 
 
 const app = express();

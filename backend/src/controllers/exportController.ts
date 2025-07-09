@@ -1,7 +1,7 @@
 // src/controllers/exportController.ts
 import { Request, Response } from 'express';
-import { AppDataSource } from '../config/data-source';
-import { Transaction } from '../models/Transaction';
+import { AppDataSource } from '../config/data-source.js';
+import { Transaction } from '../models/Transaction.js';
 import { format } from 'date-fns';
 import { writeToString } from 'fast-csv';
 

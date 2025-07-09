@@ -1,6 +1,6 @@
 // src/routes/exportRoutes.ts
 import { Router } from 'express';
-import { exportCSV } from '../controllers/exportController';
+import { exportCSV } from '../controllers/exportController.js';
 
 const router = Router();
 

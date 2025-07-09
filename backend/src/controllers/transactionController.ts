@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
-import { AppDataSource } from '../config/data-source';
-import { Transaction } from '../models/Transaction';
+import { AppDataSource } from '../config/data-source.js';
+import { Transaction } from '../models/Transaction.js';
 
 export const getTransactions = async (req: Request, res: Response) => {
   try {

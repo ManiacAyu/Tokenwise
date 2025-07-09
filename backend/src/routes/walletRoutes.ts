@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getTopHolders } from '../controllers/walletController';
+import { getTopHolders } from '../controllers/walletController.js';
 
 const router = Router();
 

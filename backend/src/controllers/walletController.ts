@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { fetchTopHolders } from '../services/walletService';
+import { fetchTopHolders } from '../services/walletService.js';
 
 export const getTopHolders = async (_req: Request, res: Response) => {
   try {
