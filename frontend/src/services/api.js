@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:4000/api',
+  baseURL: 'https://tokenwise-7msi.onrender.com/api',
 });
 
 export const fetchTransactions = () => API.get('/transactions');
