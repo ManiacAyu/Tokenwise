@@ -3,7 +3,7 @@ import React from 'react';
 const ExportCSVButton = () => {
   const handleDownload = async () => {
     try {
-      const response = await fetch('https://tokenwise-7msi.onrender.com/api/export/csv');
+      const response = await fetch('http://localhost:4000/api/export/csv');
 
       if (!response.ok) throw new Error('Failed to download CSV');
 
